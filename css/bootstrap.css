@@ -4624,7 +4624,7 @@ a.list-group-item.active > .badge,
   .jumbotron {
     padding-top: 24px;
     padding-bottom: 24px;
-    width: 60%;
+    width: 50%;
     position: absolute;
     right: 0;
     bottom: 0;
