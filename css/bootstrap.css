@@ -1223,6 +1223,10 @@ ul ol,
 ol ol {
   margin-bottom: 0;
 }
+ul > li,
+ol > li {
+  padding-bottom: 8px;
+}
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -5476,7 +5480,9 @@ button.close {
   padding: 0 11.5px;
 }
 .roof-application {
-  margin-bottom: 23px;
+  background-color: #e9e1ec;
+  margin-top: 23px;
+  padding: 46px 0;
 }
 .modal-open {
   overflow: hidden;
