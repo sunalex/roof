@@ -5488,6 +5488,19 @@ button.close {
   height: 150px;
   overflow: hidden;
 }
+.roof-how-number {
+  display: inline-block;
+  position: absolute;
+  margin-left: -70px;
+  font-family: "Lobster";
+  font-size: 34px;
+  color: #fff;
+  min-width: 51px;
+  padding: 6px 12px;
+  background: #d9534f;
+  border-radius: 12px;
+  text-shadow: 0 1px 0 #333333;
+}
 .modal-open {
   overflow: hidden;
 }
