@@ -4720,11 +4720,11 @@ a.thumbnail.active {
 }
 .alert-warning {
   background-color: #fcf8e3;
-  border-color: #faebcc;
+  border-color: #f0c670;
   color: #8a6d3b;
 }
 .alert-warning hr {
-  border-top-color: #f7e1b5;
+  border-top-color: #edbd59;
 }
 .alert-warning .alert-link {
   color: #66512c;
@@ -5312,22 +5312,22 @@ a.list-group-item-danger.active:focus {
   border-bottom-color: #bce8f1;
 }
 .panel-warning {
-  border-color: #faebcc;
+  border-color: #f0c670;
 }
 .panel-warning > .panel-heading {
   color: #8a6d3b;
   background-color: #fcf8e3;
-  border-color: #faebcc;
+  border-color: #f0c670;
 }
 .panel-warning > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #faebcc;
+  border-top-color: #f0c670;
 }
 .panel-warning > .panel-heading .badge {
   color: #fcf8e3;
   background-color: #8a6d3b;
 }
 .panel-warning > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #faebcc;
+  border-bottom-color: #f0c670;
 }
 .panel-danger {
   border-color: #ebccd1;
@@ -5401,16 +5401,16 @@ a.list-group-item-danger.active:focus {
   line-height: 1;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
+  opacity: 0.4;
+  filter: alpha(opacity=40);
 }
 .close:hover,
 .close:focus {
   color: #000000;
   text-decoration: none;
   cursor: pointer;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 0.7;
+  filter: alpha(opacity=70);
 }
 button.close {
   padding: 0;
@@ -5500,6 +5500,13 @@ button.close {
   background: #d9534f;
   border-radius: 12px;
   text-shadow: 0 1px 0 #333333;
+}
+.roof-alert {
+  font-size: 28px;
+  border-top: none;
+}
+.roof-alert .close {
+  font-size: 28px;
 }
 .modal-open {
   overflow: hidden;

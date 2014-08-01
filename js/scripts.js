@@ -46,15 +46,13 @@ $(document).ready(function () {
                         $('input').val('');
                         $('.modal').modal('hide');
 
+                        $('.alert').show();
+
                         $(function () {
-                            $(window).scroll();
-                            $('body, html').animate({
-                                scrollTop: 0
-                            }, 300);
+                            $("html, body").animate({ scrollTop: 0 }, "slow");
                             return false;
                         });
 
-                        $('.alert').show();
 
                     });
                 });
