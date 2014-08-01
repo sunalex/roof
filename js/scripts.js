@@ -43,7 +43,7 @@ $(document).ready(function () {
                 $.post('send.php', $form.serialize(), function (data) {
                     $('.form-control').removeClass('valid');
                     $(document).ready(function () {
-                        $('input').val('');
+                        $('.form-control').val('');
                         $('.modal').modal('hide');
 
                         $('.alert').show();
