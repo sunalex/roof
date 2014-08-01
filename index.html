@@ -16,28 +16,35 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/scripts.js"></script> 
 </head>
 <body>
+
 <div class="roof-header">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-md-offset-1">
                 <div class="roof-logo">Ради тебя</div>
                 <p>Магазин для тех, кто влюблен</p>
             </div>
             <div class="col-md-3">
-                <p class="roof-tel">+7-953-362-83-69<br/><a href="#">Обратный звонок</a></p>
+                <p class="roof-tel">+7-953-362-83-69<br/><a href="#" data-toggle="modal" data-target="#myModal-6">Обратный звонок</a></p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <p>Санкт-Петербург, ул. Жуковского 57</p>
             </div>
-
         </div>
     </div>
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-9 col-sm-7 col-xs-8">
+        <div class="col-md-10">
+            <div class="alert alert-warning" role="alert" style="display:none;"><button type="button" class="close close-alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>Спасибо за заказ! Мы свяжемся с вами в ближайшее время.</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9 col-md-offset-1 col-sm-7 col-sm-offset-1 col-xs-8 col-xs-offset-1">
             <div class="roof-title">
                 <small>Свидание</small>
                 <br/>на крышах Питера
@@ -55,7 +62,7 @@
     <div class="container">
 
         <div class="jumbotron">
-            <h3>Свидание-сюрприз.
+            <h3 class="dating-name">Свидание-сюрприз.
                 <small>Спецпредложение!</small>
             </h3>
 
@@ -75,18 +82,18 @@
                 <div class="col-md-5">
 
 
-                    <form role="form">
-
+                    <form role="form" method="post" action="send.php" class="form">
+						<input type="text" hidden name="dating-name" value="Свидание-сюрприз">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Имя">
+                            <input type="text" class="form-control" placeholder="Имя" name="name" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Телефон">
+                            <input type="text" class="form-control" placeholder="Телефон" name="phone" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Email">
+                            <input type="text" class="form-control" placeholder="Email" name="email" required>
                         </div>
-                        <button type="submit" class="btn btn-warning">Хочу свидание</button>
+                        <button type="submit" class="btn btn-warning submit" name="submit" >Хочу свидание</button>
                     </form>
                 </div>
             </div>
@@ -335,33 +342,38 @@
             </div>
 
         </div>
-        <p class="text-center"><a href="#">Отправить нам отзыв</a></p>
+        <p class="text-center"><a href="mailto:info@radi-lubvi.ru">Отправить нам отзыв</a></p>
     </div>
 </div>
 <div class="roof-application">
     <div class="container">
+    <div class="row">
+        <div class="col-md-11 col-md-offset-1">
         <p>Хотите незабываемое свидание, организованное специально для вас?</p>
 
         <h2>Оставьте нам заявку</h2>
+        </div>
+    </div>
 
         <div class="row">
-            <div class="col-lg-5">
+            <div class="col-md-5 col-md-offset-1">
 
 
-                <form role="form">
+                <form role="form" method="post" action="send.php" class="form">
+                	<input type="text" hidden name="dating-name" value="Хотите незабываемое свидание, организованное специально для вас?">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Имя">
+                        <input type="text" class="form-control" placeholder="Имя" name="name" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Телефон">
+                        <input type="text" class="form-control" placeholder="Телефон" name="phone" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Email">
+                        <input type="text" class="form-control" placeholder="Email" name="email" required>
                     </div>
-                    <button type="submit" class="btn btn-success">Хочу свидание</button>
+                    <button type="submit" class="btn btn-success" name="submit">Хочу свидание</button>
                 </form>
             </div>
-            <div class="col-lg-3">
+            <div class="col-md-6">
 
             </div>
         </div>
@@ -370,17 +382,16 @@
 <div class="roof-header">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-md-offset-1">
                 <div class="roof-logo">Ради тебя</div>
                 <p>Магазин для тех, кто влюблен</p>
             </div>
             <div class="col-md-3">
-                <p class="roof-tel">+7-953-362-83-69<br/><a href="#">Обратный звонок</a></p>
+                <p class="roof-tel">+7-953-362-83-69<br/><a href="#" data-toggle="modal" data-target="#myModal-6">Обратный звонок</a></p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <p>Санкт-Петербург, ул. Жуковского 57</p>
             </div>
-
         </div>
     </div>
 </div>
@@ -394,12 +405,12 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span
                         aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h2 class="modal-title">Свидание-сюрприз.
+                <h2 class="modal-title dating-name">Свидание-сюрприз.
                     <small>Спецпредложение!</small>
                 </h2>
             </div>
 
-            <form role="form">
+            <form role="form" method="post" action="send.php" class="form">
 
                 <div class="modal-body">
                     <div class="row">
@@ -429,15 +440,15 @@
                     <div class="row">
                         <div class="col-md-8">
                             <h3>Укажите свои данные</h3>
-
+							<input type="text" hidden name="dating-name" value="Свидание-сюрприз">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Имя">
+                                <input type="text" class="form-control" placeholder="Имя" name="name" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Телефон">
+                                <input type="text" class="form-control" placeholder="Телефон" name="phone" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Email">
+                                <input type="text" class="form-control" placeholder="Email" name="email" required>
                             </div>
 
                             <p class="lead">Итого: <span class="roof-price special-offer-price">4 600 &#8399; <small>7
@@ -453,7 +464,7 @@
                 <div class="modal-footer">
                     <div class="row">
                         <div class="col-md-3">
-                            <button type="button" class="btn btn-lg btn-warning pull-left" data-dismiss="modal">Заказать
+                            <button type="submit" class="btn btn-lg btn-warning pull-left" name="submit">Заказать
                             </button>
                         </div>
                         <div class="col-md-6"><p class="text-left">Мы перезвоним в течение часа и обговорим
@@ -483,10 +494,10 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span
                         aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h2 class="modal-title">Romantic-Light</h2>
+                <h2 class="modal-title dating-name">Romantic-Light</h2>
             </div>
 
-            <form role="form">
+            <form role="form" method="post" action="send.php" class="form">
 
                 <div class="modal-body">
                     <div class="row">
@@ -517,15 +528,15 @@
                     <div class="row">
                         <div class="col-md-8">
                             <h3>Укажите свои данные</h3>
-
+							<input type="text" hidden name="dating-name" value="Romantic-Light">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Имя">
+                                <input type="text" class="form-control" placeholder="Имя" name="name" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Телефон">
+                                <input type="text" class="form-control" placeholder="Телефон" name="phone" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Email">
+                                <input type="text" class="form-control" placeholder="Email" name="email" required>
                             </div>
 
                             <p class="lead">Итого: <span class="roof-price special-offer-price">9 500 &#8399;</span></p>
@@ -539,7 +550,7 @@
                 <div class="modal-footer">
                     <div class="row">
                         <div class="col-md-3">
-                            <button type="button" class="btn btn-lg btn-warning pull-left" data-dismiss="modal">Заказать
+                            <button type="submit" class="btn btn-lg btn-warning pull-left" name="submit">Заказать
                             </button>
                         </div>
                         <div class="col-md-6"><p class="text-left">Мы перезвоним в течение часа и обговорим
@@ -568,10 +579,10 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span
                         aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h2 class="modal-title">Свидание в заграничном стиле</h2>
+                <h2 class="modal-title dating-name">Свидание в заграничном стиле</h2>
             </div>
 
-            <form role="form">
+            <form role="form" action="send.php" method="post" class="form">
 
                 <div class="modal-body">
                     <div class="row">
@@ -604,15 +615,15 @@
                     <div class="row">
                         <div class="col-md-8">
                             <h3>Укажите свои данные</h3>
-
+							<input type="text" hidden name="dating-name" value="Свидание в заграничном стиле">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Имя">
+                                <input type="text" class="form-control" placeholder="Имя" name="name" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Телефон">
+                                <input type="text" class="form-control" placeholder="Телефон" name="phone" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Email">
+                                <input type="text" class="form-control" placeholder="Email" name="email" required>
                             </div>
 
                             <p class="lead">Итого: <span class="roof-price special-offer-price">12 000 &#8399;</span>
@@ -627,7 +638,7 @@
                 <div class="modal-footer">
                     <div class="row">
                         <div class="col-md-3">
-                            <button type="button" class="btn btn-lg btn-warning pull-left" data-dismiss="modal">Заказать
+                            <button type="submit" class="btn btn-lg btn-warning pull-left" name="submit">Заказать
                             </button>
                         </div>
                         <div class="col-md-6"><p class="text-left">Мы перезвоним в течение часа и обговорим
@@ -656,10 +667,10 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span
                         aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h2 class="modal-title">Скромное обаяние буржуазии</h2>
+                <h2 class="modal-title dating-name">Скромное обаяние буржуазии</h2>
             </div>
 
-            <form role="form">
+            <form role="form" method="post" action="send.php" class="form">
 
                 <div class="modal-body">
                     <div class="row">
@@ -691,15 +702,15 @@
                     <div class="row">
                         <div class="col-md-8">
                             <h3>Укажите свои данные</h3>
-
+							<input type="text" hidden name="dating-name" value="Скромное обаяние буржуазии">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Имя">
+                                <input type="text" class="form-control" placeholder="Имя" name="name" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Телефон">
+                                <input type="text" class="form-control" placeholder="Телефон" name="phone" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Email">
+                                <input type="text" class="form-control" placeholder="Email" name="email" required>
                             </div>
 
                             <p class="lead">Итого: <span class="roof-price special-offer-price">16 500 &#8399;</span>
@@ -714,7 +725,7 @@
                 <div class="modal-footer">
                     <div class="row">
                         <div class="col-md-3">
-                            <button type="button" class="btn btn-lg btn-warning pull-left" data-dismiss="modal">Заказать
+                            <button type="submit" class="btn btn-lg btn-warning pull-left" name="submit">Заказать
                             </button>
                         </div>
                         <div class="col-md-6"><p class="text-left">Мы перезвоним в течение часа и обговорим
@@ -743,10 +754,10 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span
                         aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h2 class="modal-title">Блеск буржуазии</h2>
+                <h2 class="modal-title dating-name">Блеск буржуазии</h2>
             </div>
 
-            <form role="form">
+            <form role="form" method="post" action="send.php" class="form">
 
                 <div class="modal-body">
                     <div class="row">
@@ -774,15 +785,15 @@
                     <div class="row">
                         <div class="col-md-8">
                             <h3>Укажите свои данные</h3>
-
+							<input type="text" hidden name="dating-name" value="Блеск буржуазии">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Имя">
+                                <input type="text" class="form-control" placeholder="Имя" name="name" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Телефон">
+                                <input type="text" class="form-control" placeholder="Телефон" name="phone" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Email">
+                                <input type="text" class="form-control" placeholder="Email" name="email" required>
                             </div>
 
                             <p class="lead">от <span class="roof-price special-offer-price">25 000 &#8399;</span></p>
@@ -796,7 +807,7 @@
                 <div class="modal-footer">
                     <div class="row">
                         <div class="col-md-3">
-                            <button type="button" class="btn btn-lg btn-warning pull-left" data-dismiss="modal">Заказать
+                            <button type="submit" class="btn btn-lg btn-warning pull-left" name="submit">Заказать
                             </button>
                         </div>
                         <div class="col-md-6"><p class="text-left">Мы перезвоним в течение часа и обговорим
@@ -816,6 +827,61 @@
     <!-- /.modal-dialog -->
 </div>
 <!-- /.modal 5 -->
+
+<!-- .modal 6 -->
+<div class="modal fade" id="myModal-6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span
+                        aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h2 class="modal-title dating-name">Укажите свои данные для обратного звонка</h2>
+            </div>
+
+            <form role="form" method="post" action="send.php" class="form">
+
+                <div class="modal-body">                    
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Имя" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Телефон" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Удобное для звонка время" name="time" required>
+                            </div>                           
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <button type="submit" class="btn btn-warning pull-left" name="submit">Заказать обратный звонок
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal 6 -->
+
+
 
 
 </body>
