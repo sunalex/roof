@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
             $email = $_POST['email'];
         }        
         $dating = $_POST['dating-name'];
-        $to = 'sunalex@sunalex.ru';
+        $to = 'info@radi-lubvi.ru';
         $subject = 'Посетитель заказал свидание!';
         if(!empty($_POST['email'])){
             $message = 'Имя: '.$name. ', Телефон: '.$phone. ', Email: ' .$email. ', Свидание: ' .$dating;
