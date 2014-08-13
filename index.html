@@ -17,7 +17,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.validate.js"></script>
-    <script src="js/scripts.js"></script> 
+    <script src="js/scripts.js"></script>
 </head>
 <body>
 
@@ -29,7 +29,8 @@
                 <p>Магазин для тех, кто влюблен</p>
             </div>
             <div class="col-md-3">
-                <p class="roof-tel">(812) 939-05-43<br/><a href="#" data-toggle="modal" data-target="#myModal-6">Обратный звонок</a></p>
+                <p class="roof-tel">(812) 939-05-43<br/><a href="#" data-toggle="modal" data-target="#myModal-6">Обратный
+                    звонок</a></p>
             </div>
             <div class="col-md-5">
                 <p>Санкт-Петербург, ул. Жуковского 57</p>
@@ -40,7 +41,11 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <div class="alert alert-warning roof-alert" role="alert"><button type="button" class="close close-alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>Спасибо за заказ! Мы свяжемся с вами в ближайшее время.</div>
+            <div class="alert alert-warning roof-alert" role="alert">
+                <button type="button" class="close close-alert"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                Спасибо за заказ! Мы свяжемся с вами в ближайшее время.
+            </div>
         </div>
     </div>
     <div class="row">
@@ -66,7 +71,7 @@
                 <small>Спецпредложение!</small>
             </h3>
 
-            <p class="roof-price special-offer-price">4 600 руб.
+            <p class="price price-special">4 600 руб.
                 <small>7 000 руб.</small>
             </p>
 
@@ -83,7 +88,8 @@
 
 
                     <form role="form" method="post" action="send.php" class="form">
-						<input type="text" hidden name="dating-name" value="Свидание-сюрприз">
+                        <input type="text" hidden name="dating-name" value="Свидание-сюрприз">
+
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Имя" name="name" required>
                         </div>
@@ -93,37 +99,389 @@
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Email" name="email" required>
                         </div>
-                        <button type="submit" class="btn btn-warning submit" name="submit" >Хочу свидание</button>
+                        <button type="submit" class="btn btn-warning submit" name="submit">Хочу свидание</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="roof-how-works">
+
+<!-- Hits -->
+<div class="hits">
     <div class="container">
+        <h1>Хиты и новинки</h1>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail thumbnail-full-violet">
+
+                            <div class="caption">
+                                <h3>Завтрак на крыше</h3>
+                                <p class="price price-special">5 550 руб.<small>9 100 руб.</small></p>
+                            </div>
+
+                            <div class="plan-image">
+                                <img src="img/dating-1.jpg">
+                            </div>
+
+                            <div class="caption">
+                                <p>Легкий ветерок, вкусный завтрак, только вы и ваша половинка, вдвоем.</p>
+                                <p>Встретьте утро с прекрасным видом на Петербург. </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="thumbnail thumbnail-full-orange">
+
+                            <div class="caption">
+                                <h3>Ланч на крыше</h3>
+                                <p class="price price-special">5 900 руб.<small>8 600 руб.</small></p>
+                            </div>
+
+                            <div class="plan-image">
+                                <img src="img/dating-1.jpg">
+                            </div>
+
+                            <div class="caption">
+                                <p>«Украдите» свою девушку с работы, привезите на крышу и наслаждайтесь ее восхищением :)</p>
+                                <p>Или просто пообедайте с коллегами :)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="thumbnail thumbnail-full-green">
+
+                            <div class="caption">
+                                <h3>Свежий образ :)</h3>
+                                <p class="price price-special">8 950 руб.<small>11 500 руб.</small></p>
+                            </div>
+
+                            <div class="plan-image">
+                                <img src="img/dating-1.jpg">
+                            </div>
+
+                            <div class="caption">
+                                <p>Вы встретитесь только на крыше и познакомитесь “заново” :) Новая одежда, новые образы...</p>
+                                <p>Узнайте подробности по телефону.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
 
 
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- /Hits-->
+
+<div class="roof-plans">
+    <div class="container">
+        <h1>Основные тарифы</h1>
+
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1">
+                <div class="thumbnail">
+                    <div class="plan-image">
+                        <img src="img/dating-1.jpg">
+                    </div>
+
+                    <div class="caption">
+                        <h3>Свидание-сюрприз.
+                            <small>Спецпредложение!</small>
+                        </h3>
+
+                        <p class="price price-special">4 600 руб.
+                            <small>7 000 руб.</small>
+                        </p>
+
+                        <p>Организуем пикник с легкими закусками на уютной крыше и поможем привести девушку так, чтобы
+                            свидание стало классным сюрпризом!</p>
+
+                        <p class="roof-explanation">Много опций на заказ! <a href="#" role="button" data-toggle="modal"
+                                                                             data-target="#myModal-1">Показать
+                            подробнее</a>
+                        </p>
+
+                        <p><a href="#" class="btn btn-success" role="button" data-toggle="modal"
+                              data-target="#myModal-1">Хочу
+                            свидание</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="thumbnail">
+                    <div class="plan-image">
+                        <img src="img/dating-2.jpg">
+                    </div>
+
+                    <div class="caption">
+                        <h3>Romantic-Light</h3>
+
+                        <p class="price">9 500 руб.</p>
+
+                        <p>Сервируем стол и закажем сытный и очень вкусный ужин. Наслаждайтесь романтической обстановкой
+                            и
+                            замечательным видом.</p>
+
+                        <p class="roof-explanation">Много опций на заказ! <a href="#" role="button" data-toggle="modal"
+                                                                             data-target="#myModal-2">Показать
+                            подробнее</a>
+                        </p>
+
+                        <p><a href="#" class="btn btn-success" role="button" data-toggle="modal"
+                              data-target="#myModal-2">Хочу
+                            свидание</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1">
+                <div class="thumbnail">
+                    <div class="plan-image">
+                        <img src="img/dating-3.jpg">
+                    </div>
+
+                    <div class="caption">
+                        <h3>Свидание в заграничном стиле</h3>
+
+                        <p class="price">12 000 руб.</p>
+
+                        <p>Тематическое свидание (на выбор – Франция, Италия или Португалия):</p>
+                        <ul>
+                            <li>Стол, сервированный национальными блюдами и вином.</li>
+                            <li>Тематическое музыкальное сопровождение.</li>
+                            <li>Особый подарок-сюрприз для вашей половинки.</li>
+                        </ul>
+                        <p class="roof-explanation">Возможны дополнения! <a href="#" role="button" data-toggle="modal"
+                                                                            data-target="#myModal-3">Показать
+                            подробнее</a>
+                        </p>
+
+                        <p><a href="#" class="btn btn-success" role="button" data-toggle="modal"
+                              data-target="#myModal-3">Хочу
+                            свидание</a>
+                        </p>
 
 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="thumbnail">
+                    <div class="plan-image">
+                        <img src="img/dating-4.jpg">
+                    </div>
+
+                    <div class="caption">
+                        <h3>Скромное обаяние буржуазии</h3>
+
+                        <p class="price">16 500 руб.</p>
+
+                        <p>Вдохновляющее свидание в стиле dolce vita:</p>
+                        <ul>
+                            <li>Изысканно сервированный стол, бармен или стейк-повар.</li>
+                            <li>Специальная lounge-зона с пледами, много воздушных шариков.</li>
+                            <li>Романтическая фотосессия с профессиональным фотографом.</li>
+                        </ul>
+                        <p class="roof-explanation">Возможны дополнения! <a href="#" role="button" data-toggle="modal"
+                                                                            data-target="#myModal-4">Показать
+                            подробнее</a>
+                        </p>
+
+                        <p><a href="#" class="btn btn-success" role="button" data-toggle="modal"
+                              data-target="#myModal-4">Хочу свидание</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="request">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+
+                <div class="thumbnail">
+                    <div class="caption">
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <h2>Подвезем!</h2>
+
+                                <p class="lead">Закажите романтический вечер на крыше прямо сейчас и получите в подарок
+                                    бесплатный трансфер домой!</p>
+
+                                <p class="lead">Все для вас!</p>
+
+                            </div>
+                            <div class="col-md-5 col-md-offset-1 roof-application">
+
+                                <h3>Оставить заявку</h3>
+
+
+                                <img src="img/taxi.jpg" class="taxi">
+
+
+                                <form role="form" method="post" action="send.php" class="form">
+                                    <input type="text" hidden name="dating-name"
+                                           value="Хотите незабываемое свидание, организованное специально для вас?">
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Имя" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Телефон" name="phone"
+                                               required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email" name="email"
+                                               required>
+                                    </div>
+                                    <button type="submit" class="btn btn-success" name="submit">Хочу свидание</button>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!-- Special offers-->
+<div class="featured">
+    <div class="container">
+        <h1>Особые предложения</h1>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail thumbnail-full-violet">
+
+                            <div class="caption">
+                                <h3>Вечер фокусов</h3>
+                                <p class="price price-special">7 600 руб.<small>9 500 руб.</small></p>
+                            </div>
+
+                            <div class="plan-image">
+                                <img src="img/dating-1.jpg">
+                            </div>
+
+                            <div class="caption">
+                                <p>Наш фокусник проведет на крыше еще четыре представления для пар.</p>
+                                <p>Хотите посмотреть? :)</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="thumbnail thumbnail-full-orange">
+
+                            <div class="caption">
+                                <h3>Световое шоу</h3>
+                                <p class="price price-special">5 900 руб.<small>8 600 руб.</small></p>
+                            </div>
+
+                            <div class="plan-image">
+                                <img src="img/dating-1.jpg">
+                            </div>
+
+                            <div class="caption">
+                                <p>Лазеры и фонарики, волшебное питерское небо, звезды.</p>
+                                <p>У специалиста по свету осталось 5 свободнх вечеров.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="thumbnail thumbnail-full-green">
+
+                            <div class="caption">
+                                <h3>Мясо с кровью</h3>
+                                <p class="price price-special">8 950 руб.<small>11 500 руб.</small></p>
+                            </div>
+
+                            <div class="plan-image">
+                                <img src="img/dating-1.jpg">
+                            </div>
+
+                            <div class="caption">
+                                <p>Повар приготовит для вас стейк или барбеккю.</p>
+                                <p>У него только один свободный вечер на этой неделе!</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- /Special offers-->
+
+<div class="how-works">
+    <div class="container">
         <div class="row">
             <div class="col-md-5 col-md-offset-1">
                 <div class="thumbnail">
                     <div class="caption">
 
-                        <img src="img/author.jpg" class="roof-author img-circle center-block">
+                        <img src="img/author.jpg" class="author-photo img-circle center-block">
 
                         <h1 class="roof-h1-inline">Не можете выбрать?</h1>
+
                         <p class="lead roof-h2-inline">Возникли вопросы?</p>
+
                         <p class="lead roof-h3-inline">Я помогу</p>
 
                         <p>Меня зовут Иван, я помогу вашему свиданию пройти незабываемо и романтично!</p>
-                        <p>Позвоните или напишите мне прямо сейчас, и я с радостью помогу вам выбрать подходящий тариф.</p>
+
+                        <p>Позвоните или напишите мне прямо сейчас, и я с радостью помогу вам выбрать подходящий
+                            тариф.</p>
 
                         <p class="lead">(812) 939-05-43</p>
+
                         <p><a href="mailto:info@radi-lubvi.ru">info@radi-lubvi.ru</a></p>
-                        </div>
                     </div>
+                </div>
 
 
             </div>
@@ -131,14 +489,25 @@
                 <div class="thumbnail">
                     <div class="caption">
                         <h1 class="roof-h1-inline">Как мы работаем</h1>
-                                <p class="roof-how-point"><span class="roof-how-number">1.</span>Вы оставляете заявку, или звоните по телефону <nobr>(812) 939-05-43.</nobr></p>
-                                <p class="roof-how-point"><span class="roof-how-number">2.</span>В течение часа мы перезваниваем, уточняем дату и пожелания.</p>
-                                <p class="roof-how-point"><span class="roof-how-number">3.</span>Вы вносите предоплату 30% – курьером или на карту банка.</p>
-                                <p class="roof-how-point"><span class="roof-how-number">4.</span>В назначенное время вы приходите на свидание и проводите прекрасный вечер!</p>
 
-                        <p class="roof-call">Дарите друг другу эмоции!</p>
-                        <p class="roof-call">Любите и будьте любимы!</p>
-                        <p class="roof-call">До встречи!</p>
+                        <p class="how-works-point"><span class="how-works-number">1.</span>Вы оставляете заявку, или
+                            звоните по телефону
+                        <nobr>(812) 939-05-43.</nobr>
+                        </p>
+                        <p class="how-works-point"><span class="how-works-number">2.</span>В течение часа мы
+                            перезваниваем, уточняем дату и пожелания.</p>
+
+                        <p class="how-works-point"><span class="how-works-number">3.</span>Вы вносите предоплату 30% –
+                            курьером или на карту банка.</p>
+
+                        <p class="how-works-point"><span class="how-works-number">4.</span>В назначенное время вы
+                            приходите на свидание и проводите прекрасный вечер!</p>
+
+                        <p class="appeal">Дарите друг другу эмоции!</p>
+
+                        <p class="appeal">Любите и будьте любимы!</p>
+
+                        <p class="appeal">До встречи!</p>
                     </div>
                 </div>
 
@@ -147,183 +516,21 @@
 
     </div>
 </div>
-<div class="roof-plans">
-<div class="container">
-    <h1>Варианты свиданий</h1>
+<div class="photoalbum">
+    <div class="container">
+        <h1>Фотоальбом</h1>
 
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="thumbnail">
-                <div class="caption">
-                    <h3>На каждом свидании, в любом из вариантов:</h3>
-                    <ul>
-                        <li>Безопасная крыша с красивым видом. В большинстве случаев – плоская, с видом на Неву и центр
-                            города.
-                        </li>
-                        <li>Романтическая обстановка – свечи, лепестки роз, красивая музыка. И уютные пледы.</li>
-                        <li>Вкусное шампанское, конфеты, фрукты.</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
 
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col-md-5 col-md-offset-1">
-            <div class="thumbnail">
-                <div class="roof-plan-photo">
-                    <img src="img/dating-1.jpg">
-                </div>
-
-                <div class="caption">
-                    <h3>Свидание-сюрприз.
-                        <small>Спецпредложение!</small>
-                    </h3>
-
-                    <p class="roof-price special-offer-price">4 600 руб.
-                        <small>7 000 руб.</small>
-                    </p>
-
-                    <p>Организуем пикник с легкими закусками на уютной крыше и поможем привести девушку так, чтобы
-                        свидание стало классным сюрпризом!</p>
-
-                    <p class="roof-explanation">Много опций на заказ! <a href="#" role="button" data-toggle="modal"
-                                                                         data-target="#myModal-1">Показать подробнее</a>
-                    </p>
-
-                    <p><a href="#" class="btn btn-success" role="button" data-toggle="modal" data-target="#myModal-1">Хочу
-                        свидание</a>
-                    </p>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-md-5">
-            <div class="thumbnail">
-                <div class="roof-plan-photo">
-                    <img src="img/dating-2.jpg">
-                </div>
-
-                <div class="caption">
-                    <h3>Romantic-Light</h3>
-
-                    <p class="roof-price">9 500 руб.</p>
-
-                    <p>Сервируем стол и закажем сытный и очень вкусный ужин. Наслаждайтесь романтической обстановкой и
-                        замечательным видом.</p>
-
-                    <p class="roof-explanation">Много опций на заказ! <a href="#" role="button" data-toggle="modal"
-                                                                         data-target="#myModal-2">Показать подробнее</a>
-                    </p>
-
-                    <p><a href="#" class="btn btn-success" role="button" data-toggle="modal" data-target="#myModal-2">Хочу
-                        свидание</a>
-                    </p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-5 col-md-offset-1">
-            <div class="thumbnail">
-                <div class="roof-plan-photo">
-                    <img src="img/dating-3.jpg">
-                </div>
-
-                <div class="caption">
-                    <h3>Свидание в заграничном стиле</h3>
-
-                    <p class="roof-price">12 000 руб.</p>
-
-                    <p>Тематическое свидание (на выбор – Франция, Италия или Португалия):</p>
-                    <ul>
-                        <li>Стол, сервированный национальными блюдами и вином.</li>
-                        <li>Тематическое музыкальное сопровождение.</li>
-                        <li>Особый подарок-сюрприз для вашей половинки.</li>
-                    </ul>
-                    <p class="roof-explanation">Возможны дополнения! <a href="#" role="button" data-toggle="modal"
-                                                                        data-target="#myModal-3">Показать подробнее</a>
-                    </p>
-
-                    <p><a href="#" class="btn btn-success" role="button" data-toggle="modal" data-target="#myModal-3">Хочу
-                        свидание</a>
-                    </p>
-
-
-                </div>
-            </div>
-        </div>
-        <div class="col-md-5">
-            <div class="thumbnail">
-                <div class="roof-plan-photo">
-                    <img src="img/dating-4.jpg">
-                </div>
-
-                <div class="caption">
-                    <h3>Скромное обаяние буржуазии</h3>
-
-                    <p class="roof-price">16 500 руб.</p>
-
-                    <p>Вдохновляющее свидание в стиле dolce vita:</p>
-                    <ul>
-                        <li>Изысканно сервированный стол, бармен или стейк-повар.</li>
-                        <li>Специальная lounge-зона с пледами, много воздушных шариков.</li>
-                        <li>Романтическая фотосессия с профессиональным фотографом.</li>
-                    </ul>
-                    <p class="roof-explanation">Возможны дополнения! <a href="#" role="button" data-toggle="modal"
-                                                                        data-target="#myModal-4">Показать подробнее</a>
-                    </p>
-
-                    <p><a href="#" class="btn btn-success" role="button" data-toggle="modal"
-                          data-target="#myModal-4">Хочу свидание</a></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="thumbnail">
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="img/dating-5.jpg">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="caption">
-                            <h3>Блеск буржуазии</h3>
-
-                            <p class="roof-price">от 25 000 руб.</p>
-
-                            <p>Немного больше, чем роскошное, шикарное свидание:</p>
-
-                            <ul>
-                                <li>Доставка на катере, лимузине или в карете.</li>
-                                <li>Панорамная видеосъемка с помощью летающего коптера.</li>
-                                <li>Красиво оформленный номер в отеле для продолжения свидания.</li>
-                            </ul>
-                            <p class="roof-explanation">И еще куча здоровских опций! <a href="#" role="button"
-                                                                                        data-toggle="modal"
-                                                                                        data-target="#myModal-5">Показать
-                                подробнее</a></p>
-
-                            <p><a href="#" class="btn btn-success" role="button" data-toggle="modal"
-                                  data-target="#myModal-5">Хочу свидание</a>
-                            </p>
-
-
-                        </div>
-                    </div>
-                </div>
-
+                <img src="img/photoalbum.jpg" class="center-block">
 
             </div>
         </div>
-    </div>
+
     </div>
 </div>
+
 <div class="feedback-block">
     <div class="container">
         <h1>Отзывы наших клиентов</h1>
@@ -360,53 +567,60 @@
         <p class="text-center"><a href="mailto:info@radi-lubvi.ru">Отправить нам отзыв</a></p>
     </div>
 </div>
-<div>
+<div class="request">
     <div class="container">
-    <div class="row">
-        <div class="col-md-11 col-md-offset-1">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
 
-            <div class="thumbnail">
-                <div class="caption">
+                <div class="thumbnail">
+                    <div class="caption">
 
-                    <div class="row">
+                        <div class="row">
 
-                        <div class="col-md-6">
-                            <h2>Подвезем!</h2>
-                            <p class="lead">Закажите романтический вечер на крыше прямо сейчас и получите в подарок бесплатный трансфер домой!</p>
-                            <p class="lead">Все для вас!</p>
+                            <div class="col-md-6">
+                                <h2>Подвезем!</h2>
 
+                                <p class="lead">Закажите романтический вечер на крыше прямо сейчас и получите в подарок
+                                    бесплатный трансфер домой!</p>
+
+                                <p class="lead">Все для вас!</p>
+
+                            </div>
+                            <div class="col-md-5 col-md-offset-1 roof-application">
+
+                                <h3>Оставить заявку</h3>
+
+
+                                <img src="img/taxi.jpg" class="taxi">
+
+
+                                <form role="form" method="post" action="send.php" class="form">
+                                    <input type="text" hidden name="dating-name"
+                                           value="Хотите незабываемое свидание, организованное специально для вас?">
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Имя" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Телефон" name="phone"
+                                               required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email" name="email"
+                                               required>
+                                    </div>
+                                    <button type="submit" class="btn btn-success" name="submit">Хочу свидание</button>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+
+                            </div>
                         </div>
-                        <div class="col-md-5 col-md-offset-1 roof-application">
 
-                            <h2>Оставить заявку</h2>
-
-
-                            <img src="img/taxi.jpg" class="roof-taxi">
-
-
-                            <form role="form" method="post" action="send.php" class="form">
-                                <input type="text" hidden name="dating-name" value="Хотите незабываемое свидание, организованное специально для вас?">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Имя" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Телефон" name="phone" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email" name="email" required>
-                                </div>
-                                <button type="submit" class="btn btn-success" name="submit">Хочу свидание</button>
-                            </form>
-                        </div>
-                        <div class="col-md-6">
-
-                        </div>
                     </div>
-
                 </div>
-                </div>
+            </div>
         </div>
-    </div>
 
 
     </div>
@@ -419,7 +633,8 @@
                 <p>Магазин для тех, кто влюблен</p>
             </div>
             <div class="col-md-3">
-                <p class="roof-tel">(812) 939-05-43<br/><a href="#" data-toggle="modal" data-target="#myModal-6">Обратный звонок</a></p>
+                <p class="roof-tel">(812) 939-05-43<br/><a href="#" data-toggle="modal" data-target="#myModal-6">Обратный
+                    звонок</a></p>
             </div>
             <div class="col-md-5">
                 <p>Санкт-Петербург, ул. Жуковского 57</p>
@@ -472,7 +687,8 @@
                     <div class="row">
                         <div class="col-md-8">
                             <h3>Укажите свои данные</h3>
-							<input type="text" hidden name="dating-name" value="Свидание-сюрприз">
+                            <input type="text" hidden name="dating-name" value="Свидание-сюрприз">
+
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Имя" name="name" required>
                             </div>
@@ -483,9 +699,10 @@
                                 <input type="text" class="form-control" placeholder="Email" name="email" required>
                             </div>
 
-                            <p class="lead">Итого: <span class="roof-price special-offer-price">4 600 руб. <small>7
+                            <p class="lead">Итого: <span class="price price-special">4 600 руб. <small>7
                                 000
-                                руб.</small></span></p>
+                                руб.
+                            </small></span></p>
 
                         </div>
 
@@ -560,7 +777,8 @@
                     <div class="row">
                         <div class="col-md-8">
                             <h3>Укажите свои данные</h3>
-							<input type="text" hidden name="dating-name" value="Romantic-Light">
+                            <input type="text" hidden name="dating-name" value="Romantic-Light">
+
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Имя" name="name" required>
                             </div>
@@ -571,7 +789,7 @@
                                 <input type="text" class="form-control" placeholder="Email" name="email" required>
                             </div>
 
-                            <p class="lead">Итого: <span class="roof-price special-offer-price">9 500 руб.</span></p>
+                            <p class="lead">Итого: <span class="price price-special">9 500 руб.</span></p>
 
                         </div>
 
@@ -647,7 +865,8 @@
                     <div class="row">
                         <div class="col-md-8">
                             <h3>Укажите свои данные</h3>
-							<input type="text" hidden name="dating-name" value="Свидание в заграничном стиле">
+                            <input type="text" hidden name="dating-name" value="Свидание в заграничном стиле">
+
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Имя" name="name" required>
                             </div>
@@ -658,7 +877,7 @@
                                 <input type="text" class="form-control" placeholder="Email" name="email" required>
                             </div>
 
-                            <p class="lead">Итого: <span class="roof-price special-offer-price">12 000 руб.</span>
+                            <p class="lead">Итого: <span class="price price-special">12 000 руб.</span>
                             </p>
 
                         </div>
@@ -734,7 +953,8 @@
                     <div class="row">
                         <div class="col-md-8">
                             <h3>Укажите свои данные</h3>
-							<input type="text" hidden name="dating-name" value="Скромное обаяние буржуазии">
+                            <input type="text" hidden name="dating-name" value="Скромное обаяние буржуазии">
+
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Имя" name="name" required>
                             </div>
@@ -745,7 +965,7 @@
                                 <input type="text" class="form-control" placeholder="Email" name="email" required>
                             </div>
 
-                            <p class="lead">Итого: <span class="roof-price special-offer-price">16 500 руб.</span>
+                            <p class="lead">Итого: <span class="price price-special">16 500 руб.</span>
                             </p>
 
                         </div>
@@ -817,7 +1037,8 @@
                     <div class="row">
                         <div class="col-md-8">
                             <h3>Укажите свои данные</h3>
-							<input type="text" hidden name="dating-name" value="Блеск буржуазии">
+                            <input type="text" hidden name="dating-name" value="Блеск буржуазии">
+
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Имя" name="name" required>
                             </div>
@@ -828,7 +1049,7 @@
                                 <input type="text" class="form-control" placeholder="Email" name="email" required>
                             </div>
 
-                            <p class="lead">от <span class="roof-price special-offer-price">25 000 руб.</span></p>
+                            <p class="lead">от <span class="price price-special">25 000 руб.</span></p>
 
                         </div>
 
@@ -873,10 +1094,11 @@
 
             <form role="form" method="post" action="send.php" class="form">
 
-                <div class="modal-body">                    
+                <div class="modal-body">
                     <div class="row">
                         <div class="col-md-8">
                             <input type="text" hidden name="dating-name" value="Заказ обратного звонка">
+
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Имя" name="name" required>
                             </div>
@@ -884,8 +1106,9 @@
                                 <input type="text" class="form-control" placeholder="Телефон" name="phone" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Удобное для звонка время" name="time" required>
-                            </div>                           
+                                <input type="text" class="form-control" placeholder="Удобное для звонка время"
+                                       name="time" required>
+                            </div>
 
                         </div>
 
@@ -896,7 +1119,8 @@
                 <div class="modal-footer">
                     <div class="row">
                         <div class="col-md-9">
-                            <button type="submit" class="btn btn-warning pull-left" name="submit">Заказать обратный звонок
+                            <button type="submit" class="btn btn-warning pull-left" name="submit">Заказать обратный
+                                звонок
                             </button>
                         </div>
                         <div class="col-md-3">
@@ -913,8 +1137,6 @@
     <!-- /.modal-dialog -->
 </div>
 <!-- /.modal 6 -->
-
-
 
 
 </body>
