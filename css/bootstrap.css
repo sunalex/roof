@@ -5601,6 +5601,20 @@ button.close {
   border-bottom: 50px solid #94d42f;
   border-left: 50px solid transparent;
 }
+.invitation {
+  color: #333333;
+  font-size: 14px;
+}
+.already-purchased {
+  color: #a38643;
+  background: #fdeecb;
+  padding: 6px 12px;
+}
+.cite {
+  color: #b77894;
+  background: #f8dcee;
+  padding: 23px;
+}
 .how-works-point {
   margin-bottom: 23px;
   margin-left: 70px;
