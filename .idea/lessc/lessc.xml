@@ -16,7 +16,24 @@
               <option name="id" value="0" />
               <option name="includePattern" value="bootstrap.less" />
               <option name="lessDirPath" value="$PROJECT_DIR$/less" />
-              <option name="name" value="roof-git" />
+              <option name="name" value="roof-bootstrap" />
+            </LessProfile>
+          </value>
+        </entry>
+        <entry key="1">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="$PROJECT_DIR$/css" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="1" />
+              <option name="includePattern" value="font-awesome.less" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/less/font-awesome" />
+              <option name="name" value="roof-font-awesome" />
             </LessProfile>
           </value>
         </entry>

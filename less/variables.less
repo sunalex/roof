@@ -9,7 +9,7 @@
 
 @gray-darker:            lighten(#000, 13.5%); // #222
 @gray-dark:              lighten(#000, 20%);   // #333
-@gray:                   lighten(#000, 33.5%); // #555
+@gray:                   #acacac;
 @gray-light:             lighten(#000, 46.7%); // #777
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
@@ -25,7 +25,7 @@
 //## Settings for some of the most global styles.
 
 @body-bg:               @gray-lighter;
-@text-color:            @gray-dark;
+@text-color:            #555;
 
 @link-color:            #1d67fb;
 @link-hover-color:      @brand-danger;
@@ -41,19 +41,19 @@
 @font-family-base:        @font-family-sans-serif;
 @font-family-deco:        "Lobster";
 
-@font-size-base:          16px;
-@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
-@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25));
+@font-size-small:         ceil((@font-size-base * 0.85));
 
-@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
-@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
-@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
-@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
-@font-size-h5:            @font-size-base;
-@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+@font-size-h1:            floor((@font-size-large * 2.6));
+@font-size-h2:            floor((@font-size-large * 2.15));
+@font-size-h3:            ceil((@font-size-large * 1.7));
+@font-size-h4:            ceil((@font-size-large * 1.25));
+@font-size-h5:            @font-size-large;
+@font-size-h6:            @font-size-base;
 
 
-@line-height-base:        1.45;
+@line-height-base:        1.35;
 @line-height-computed:    floor((@font-size-base * @line-height-base));
 
 @font-weight-base:        300;

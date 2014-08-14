@@ -121,6 +121,23 @@
       border-left: 50px solid transparent;
     }
   }
+
+  .invitation {
+    color: @gray;
+    font-size: @font-size-small;
+    padding: @padding-base-vertical @padding-base-horizontal @padding-base-vertical 2em;
+    position: relative;
+
+    i {
+      display: inline-block;
+      position: absolute;
+      top: 0.9em;
+      left: 0;
+      color: @triangle-color;
+    }
+  }
+
+
 }
 
 .thumbnail-full-violet {
@@ -135,10 +152,7 @@
   .thumbnail-full(#c8dc8d; #94d42f; "new")
 }
 
-.invitation {
-  color: @gray-dark;
-  font-size: @font-size-small;
-}
+
 
 .already-purchased {
   color: #a38643;
@@ -146,16 +160,55 @@
   padding: @padding-base-vertical @padding-base-horizontal;
 }
 
+.hits-h1 {
+  margin: (@line-height-computed * 2) 0 @padding-base-vertical 0;
+  font-size: @font-size-h2;
+  text-align: left;
+}
+
+.hits-h2 {
+  margin: @padding-base-vertical 0;
+  font-family: @font-family-base;
+  text-align: left;
+}
+
+.hits-h3 {
+  margin: @padding-base-vertical 0;
+  font-family: @font-family-base;
+  text-align: left;
+}
+
+.hits-phone {
+  font-size: @font-size-h3;
+  color: #e25794;
+
+  i {
+    color: @text-color;
+  }
+}
+
 .cite {
   color: #b77894;
   background: #f8dcee;
+  margin-top: (@line-height-computed * 2);
   padding: @line-height-computed;
+
+  .say {
+    font-size: @font-size-large;
+    font-style: italic;
+  }
+
+  .signature {
+    font-size: @font-size-h3;
+    font-family: @font-family-deco;
+
+  }
 }
 
 
 .how-works-point {
-  margin-bottom: @line-height-computed;
-  margin-left: (@font-size-h2 + (@padding-base-horizontal * 3));
+  font-size: @font-size-large;
+  margin: (@line-height-computed * 2) 0 @line-height-computed (@font-size-h2 + (@padding-base-horizontal * 3));
 }
 
 .how-works-number {
@@ -172,8 +225,33 @@
   text-shadow: 0 1px 0 @text-color;
 }
 
+.how-works-h1 {
+  margin: @line-height-computed 0 @padding-base-vertical 0;
+  font-size: @font-size-h2;
+  text-align: center;
+}
+
+.how-works-h2 {
+  margin: @padding-base-vertical 0;
+  font-family: @font-family-base;
+  text-align: center;
+}
+
+.how-works-h3 {
+  margin: @padding-base-vertical 0;
+  font-family: @font-family-base;
+  text-align: center;
+  color: @brand-danger;
+}
+
+.how-works-phone {
+  margin-top: @line-height-computed;
+  font-size: @font-size-h4;
+}
+
 .appeal {
   color: @brand-danger;
+  font-size: @font-size-large;
   font-weight: bold;
   text-align: center;
 }
@@ -193,24 +271,7 @@
   bottom: 0;
 }
 
-.roof-h1-inline {
-  margin: @line-height-computed 0 @padding-base-vertical 0;
-  font-size: @font-size-h2;
-  text-align: center;
-}
 
-.roof-h2-inline {
-  margin: @padding-base-vertical 0;
-  font-family: @font-family-base;
-  text-align: center;
-}
-
-.roof-h3-inline {
-  margin: @padding-base-vertical 0;
-  font-family: @font-family-base;
-  text-align: center;
-  color: @brand-danger;
-}
 
 .author-photo {
   border: 3px solid #df9fbb;
