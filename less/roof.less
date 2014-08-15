@@ -63,7 +63,7 @@
 
 }
 
-.date-limit {
+.header-mark{
   font-family: @font-family-base;
   font-size: @font-size-base;
   text-transform: uppercase;
@@ -74,12 +74,40 @@
   border-radius: @border-radius-large;
 }
 
-.date-limit-lite {
+.date-limit {
   font-family: @font-family-base;
   font-size: @font-size-base;
   margin-left: @padding-base-horizontal;
   color: @brand-danger;
 }
+
+.custom-bullets(@color;) {
+  list-style: none;
+  padding-left: @line-height-computed;
+
+  li {
+    position: relative;
+  }
+
+  li:before {
+    content: "•";
+    position: absolute;
+    top: -10px;
+    margin-left: -(@line-height-computed);
+    font-size: @font-size-h3;
+    color: @color;
+  }
+
+}
+
+.custom-bullets-red {
+  .custom-bullets(@brand-danger;)
+}
+
+.custom-bullets-dark {
+  .custom-bullets(@text-color;)
+}
+
 
 .duration {
   position: relative;
@@ -105,7 +133,7 @@
     color: @brand-danger;
     display: inline-block;
     position: absolute;
-    top: 0.6em;
+    top: 0.1em;
     left: 0;
   }
 }
@@ -142,7 +170,7 @@
     width: auto;
     margin-left: -(@line-height-computed * 2);
     left: @line-height-computed;
-    height: 150px;
+    height: 116px;
     margin-bottom: @line-height-computed;
     border: 1px solid #fff;
 
@@ -178,7 +206,7 @@
     i {
       display: inline-block;
       position: absolute;
-      top: 0.9em;
+      top: 0.6em;
       left: 0;
       color: @triangle-color;
     }
@@ -199,12 +227,20 @@
   .thumbnail-full(#c8dc8d; #94d42f; "new")
 }
 
+.thumbnail-full-pink {
+  .thumbnail-full(#df9fbb; #e25794; "хит")
+}
 
 
 .already-purchased {
   color: #a38643;
+  display: inline-block;
+  width: auto;
   background: #fdeecb;
   padding: @padding-base-vertical @padding-base-horizontal;
+  i {
+   color: #d3bd8c;
+ }
 }
 
 .hits-h1 {

@@ -5471,7 +5471,7 @@ button.close {
   color: #777777;
   padding: 0 9px;
 }
-.date-limit {
+.header-mark {
   font-family: "Open Sans";
   font-size: 14px;
   text-transform: uppercase;
@@ -5481,11 +5481,41 @@ button.close {
   background: #d9534f;
   border-radius: 3px;
 }
-.date-limit-lite {
+.date-limit {
   font-family: "Open Sans";
   font-size: 14px;
   margin-left: 12px;
   color: #d9534f;
+}
+.custom-bullets-red {
+  list-style: none;
+  padding-left: 18px;
+}
+.custom-bullets-red li {
+  position: relative;
+}
+.custom-bullets-red li:before {
+  content: "•";
+  position: absolute;
+  top: -10px;
+  margin-left: -18px;
+  font-size: 31px;
+  color: #d9534f;
+}
+.custom-bullets-dark {
+  list-style: none;
+  padding-left: 18px;
+}
+.custom-bullets-dark li {
+  position: relative;
+}
+.custom-bullets-dark li:before {
+  content: "•";
+  position: absolute;
+  top: -10px;
+  margin-left: -18px;
+  font-size: 31px;
+  color: #555555;
 }
 .duration {
   position: relative;
@@ -5508,7 +5538,7 @@ button.close {
   color: #d9534f;
   display: inline-block;
   position: absolute;
-  top: 0.6em;
+  top: 0.1em;
   left: 0;
 }
 .roof-explanation {
@@ -5538,7 +5568,7 @@ button.close {
   width: auto;
   margin-left: -36px;
   left: 18px;
-  height: 150px;
+  height: 116px;
   margin-bottom: 18px;
   border: 1px solid #fff;
 }
@@ -5574,7 +5604,7 @@ button.close {
 .thumbnail-full-violet .invitation i {
   display: inline-block;
   position: absolute;
-  top: 0.9em;
+  top: 0.6em;
   left: 0;
   color: #92278f;
 }
@@ -5589,7 +5619,7 @@ button.close {
   width: auto;
   margin-left: -36px;
   left: 18px;
-  height: 150px;
+  height: 116px;
   margin-bottom: 18px;
   border: 1px solid #fff;
 }
@@ -5625,7 +5655,7 @@ button.close {
 .thumbnail-full-orange .invitation i {
   display: inline-block;
   position: absolute;
-  top: 0.9em;
+  top: 0.6em;
   left: 0;
   color: #e55f06;
 }
@@ -5640,7 +5670,7 @@ button.close {
   width: auto;
   margin-left: -36px;
   left: 18px;
-  height: 150px;
+  height: 116px;
   margin-bottom: 18px;
   border: 1px solid #fff;
 }
@@ -5676,14 +5706,70 @@ button.close {
 .thumbnail-full-green .invitation i {
   display: inline-block;
   position: absolute;
-  top: 0.9em;
+  top: 0.6em;
   left: 0;
   color: #94d42f;
 }
+.thumbnail-full-pink {
+  border: 2px solid #df9fbb;
+}
+.thumbnail-full-pink h3 {
+  margin-top: 0;
+}
+.thumbnail-full-pink .plan-image {
+  position: relative;
+  width: auto;
+  margin-left: -36px;
+  left: 18px;
+  height: 116px;
+  margin-bottom: 18px;
+  border: 1px solid #fff;
+}
+.thumbnail-full-pink .plan-image:before {
+  position: absolute;
+  z-index: 9999;
+  bottom: 5px;
+  right: 5px;
+  color: #fff;
+  content: "хит";
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.thumbnail-full-pink .plan-image:after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: -1px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid #e25794;
+  border-left: 50px solid transparent;
+}
+.thumbnail-full-pink .invitation {
+  color: #acacac;
+  font-size: 12px;
+  padding: 6px 12px 6px 2em;
+  position: relative;
+}
+.thumbnail-full-pink .invitation i {
+  display: inline-block;
+  position: absolute;
+  top: 0.6em;
+  left: 0;
+  color: #e25794;
+}
 .already-purchased {
   color: #a38643;
+  display: inline-block;
+  width: auto;
   background: #fdeecb;
   padding: 6px 12px;
+}
+.already-purchased i {
+  color: #d3bd8c;
 }
 .hits-h1 {
   margin: 36px 0 6px 0;
