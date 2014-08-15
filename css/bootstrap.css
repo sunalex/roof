@@ -5471,6 +5471,46 @@ button.close {
   color: #777777;
   padding: 0 9px;
 }
+.date-limit {
+  font-family: "Open Sans";
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  margin-left: 12px;
+  color: #fff;
+  background: #d9534f;
+  border-radius: 3px;
+}
+.date-limit-lite {
+  font-family: "Open Sans";
+  font-size: 14px;
+  margin-left: 12px;
+  color: #d9534f;
+}
+.duration {
+  position: relative;
+  margin: 18px 0 0 0;
+  padding-left: 2em;
+}
+.duration i {
+  color: #d9534f;
+  display: inline-block;
+  position: absolute;
+  top: 0.1em;
+  left: 0;
+}
+.gifts {
+  position: relative;
+  margin: 18px 0 36px 0;
+  padding-left: 2em;
+}
+.gifts i {
+  color: #d9534f;
+  display: inline-block;
+  position: absolute;
+  top: 0.6em;
+  left: 0;
+}
 .roof-explanation {
   font-style: italic;
   margin-bottom: 18px;
